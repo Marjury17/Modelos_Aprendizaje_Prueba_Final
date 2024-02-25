@@ -35,8 +35,11 @@ Antes de aplicar los modelos de aprendizaje se divido el conjunto de datos para 
 | Característica | Árbol de Decisión | Random Forest  | K-nearest Neighbors |
 | -------------- | ----------------- | -------------- | ------------------- |
 | Precisión | clase 0 (Benigno) es 0.97 - clase 1 (Maligno) es 0.90  | clase 0 (Benigno) es 0.96 - clase 1 (Maligno) es 0.98 | clase 0 (Benigno) es 0.94 - clase 1 (Maligno) es 0.98  |
-| Reacall  | Content Cell  | Reacall  | Content Cell  |
-| F1-score | Content Cell  | Precisión | Content Cell  |
-| Support | Content Cell  | Precisión | Content Cell  |
-| Accuracy | Content Cell  | Precisión | Content Cell  |
-| Matriz Confusión | Content Cell  | Precisión | Content Cell  |
+| Recall  | clase 0 es 0.94 - clase 1 es 0.95 | clase 0 es 0.99 - clase 1 es 0.94  | clase 0 es 0.99 - clase 1 es 0.89 |
+| F1-score | clase 0 es 0.95 - clase 1 es 0.92  | clase 0 es 0.98 - clase 1 es 0.96 | clase 0 es 0.96 - clase 1 es 0.93 |
+| Support | 108 muestras de la clase 0 y 63 muestras de la clase 1 | 108 muestras de la clase 0 y 63 muestras de la clase 1 | 108 muestras de la clase 0 y 63 muestras de la clase 1  |
+| Accuracy | 94% de las muestras en el conjunto de datos de prueba fueron predichas correctamente  | 97% de las muestras en el conjunto de datos de prueba fueron predichas correctamente | 95% de las muestras en el conjunto de datos de prueba fueron predichas correctamente |
+| Matriz Confusión | 3 falsos negativos, lo que quiere decir que se detectó 3 personas con cáncer que en realidad no tenían.
+7 falsos positivos, personas que si tienen cáncer y la predicción detectó que no tenían.  | 4 falsos negativos, lo que quiere decir que se detectó 4 personas con cáncer que en realidad no tenían.
+1 falso positivo, una persona que si tiene cáncer y la predicción detectó que no tenía. | 7 falsos negativos, lo que quiere decir que se detectó 7 personas con cáncer que en realidad no tenían.
+1 falso positivo, una persona que si tiene cáncer y la predicción detectó que no tenía. |
