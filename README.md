@@ -31,7 +31,7 @@ Antes de aplicar los modelos de aprendizaje se divido el conjunto de datos para 
 # 3.3) K-nearest Neighbors
 •	El algoritmo de k-vecinos más cercanos (KNN) es un algoritmo de aprendizaje automático supervisado simple y fácil de implementar que se puede utilizar para resolver problemas de clasificación y regresión. 
 
-# Análisis de Resultados
+# 4.) Análisis de Resultados
 | Característica | Árbol de Decisión | Random Forest  | K-nearest Neighbors |
 | -------------- | ----------------- | -------------- | ------------------- |
 | Precisión | clase 0 (Benigno) es 0.97 - clase 1 (Maligno) es 0.90  | clase 0 (Benigno) es 0.96 - clase 1 (Maligno) es 0.98 | clase 0 (Benigno) es 0.94 - clase 1 (Maligno) es 0.98  |
@@ -39,4 +39,12 @@ Antes de aplicar los modelos de aprendizaje se divido el conjunto de datos para 
 | F1-score | clase 0 es 0.95 - clase 1 es 0.92  | clase 0 es 0.98 - clase 1 es 0.96 | clase 0 es 0.96 - clase 1 es 0.93 |
 | Support | 108 muestras de la clase 0 y 63 muestras de la clase 1 | 108 muestras de la clase 0 y 63 muestras de la clase 1 | 108 muestras de la clase 0 y 63 muestras de la clase 1  |
 | Accuracy | 94% de las muestras en el conjunto de datos de prueba fueron predichas correctamente  | 97% de las muestras en el conjunto de datos de prueba fueron predichas correctamente | 95% de las muestras en el conjunto de datos de prueba fueron predichas correctamente |
-| Matriz Confusión | 3 falsos negativos, lo que quiere decir que se detectó 3 personas con cáncer que en realidad no tenían. 7 falsos positivos, personas que si tienen cáncer y la predicción detectó que no tenían.  | 4 falsos negativos, lo que quiere decir que se detectó 4 personas con cáncer que en realidad no tenían. 1 falso positivo, una persona que si tiene cáncer y la predicción detectó que no tenía. | 7 falsos negativos, lo que quiere decir que se detectó 7 personas con cáncer que en realidad no tenían. 1 falso positivo, una persona que si tiene cáncer y la predicción detectó que no tenía. |
+| Matriz Confusión | 7 falsos positivos, lo que quiere decir que se detectó 7 personas con cáncer que en realidad no tenían. 3 falsos negativos, personas que si tienen cáncer y la predicción detectó que no tenían.  | 1 falso positivo, lo que quiere decir que se detectó una persona con cáncer que en realidad no tenía. 4 falsos negativos, personas que si tienen cáncer y la predicción detectó que no tenía. | 1 falso positivo, lo que quiere decir que se detectó una persona con cáncer que en realidad no tenía. 7 falsos negativos, personas que si tienen cáncer y la predicción detectó que no tenía. |
+
+# 5.) Conclusión
+Los 3 métodos de aprendizaje presentan una buena precisión y un buen accuracy, la selección del mejor modelo en este caso, depende del resultado de los falso positivos y falsos negativos.
+
+Teniendo en cuenta que un falso positivo no es tan preocupante como un falso negativo, se concluye que para este caso el mejor modelo de aprendizaje es Random Forest, el cual tiene un accuracy general del 97%. Y detectó un 98% de las muestras benignas correctamente en cantidad son 4 personas que detectó que no tenian cáncer cuando si lo tienen.
+
+En este caso Random Forest es una opción poderosa y versátil para problemas de clasificación y regresión que ofrece una mayor precisión, resistencia al sobreajuste y manejo automático de características en comparación con los otros 2 algoritmos de aprendizaje.
+
