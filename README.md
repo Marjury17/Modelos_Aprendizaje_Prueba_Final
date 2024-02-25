@@ -21,7 +21,7 @@ Texture_1 y Texture_3 están altamente correlacionados con corr_value = 0,91
 Antes de aplicar los modelos de aprendizaje se divido el conjunto de datos para entrenamiento y test. Se tiene 398 muestras para train y 171 para test
 
 
-# 3) Modelos de aprendizaje
+# 3) Modelos de aprendizaje Seleccionados
 # 3.1) Árbol de Decisión
 •	Un árbol de decisión binario es un algoritmo de aprendizaje automático que organiza la información en una estructura jerárquica en forma de árbol. Cada nodo del árbol representa una decisión o una pregunta sobre los datos, y cada rama representa una posible respuesta a esa pregunta. A medida que se recorren las ramas, se toman decisiones sucesivas hasta llegar a una hoja del árbol, que representa una predicción o una clasificación.
 
@@ -30,3 +30,13 @@ Antes de aplicar los modelos de aprendizaje se divido el conjunto de datos para 
 
 # 3.3) K-nearest Neighbors
 •	El algoritmo de k-vecinos más cercanos (KNN) es un algoritmo de aprendizaje automático supervisado simple y fácil de implementar que se puede utilizar para resolver problemas de clasificación y regresión. 
+
+# Análisis de Resultados
+| Característica | Árbol de Decisión | Random Forest  | K-nearest Neighbors |
+| -------------- | ----------------- | -------------- | ------------------- |
+| Precisión | clase 0 (Benigno) es 0.97 - clase 1 (Maligno) es 0.90  | clase 0 (Benigno) es 0.96 - clase 1 (Maligno) es 0.98 | clase 0 (Benigno) es 0.94 - clase 1 (Maligno) es 0.98  |
+| Reacall  | Content Cell  | Reacall  | Content Cell  |
+| F1-score | Content Cell  | Precisión | Content Cell  |
+| Support | Content Cell  | Precisión | Content Cell  |
+| Accuracy | Content Cell  | Precisión | Content Cell  |
+| Matriz Confusión | Content Cell  | Precisión | Content Cell  |
